@@ -1,24 +1,36 @@
-import logo from './logo.svg';
+import Header from './components/header';
 import './App.css';
+import Login from './components/login';
+import Footer from './components/footer';
+import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
+import UserEspace from './components/UserEspace';
+import AdminEspace from './components/AdminEspace';
+import myProfile from './components/myProfile';
+import AccessDenied from './components/AcessDenied';
+import 'react-notifications/lib/notifications.css';
+import Logout from './components/logout';
+import Employes from './components/Employes';
+import Conges from './components/Conges';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Header />
+        <Switch>
+          <Route exact path="/" component={Login} />
+          <Route exact path="/mon-espace" component={UserEspace} />
+          <Route exact path="/admin-espace" component={AdminEspace} />
+          <Route exact path="/my-account" component={myProfile} />
+          <Route exact path="/access-denied" component={AccessDenied} />
+          <Route exact path="/logout" component={Logout} />
+          <Route exact path="/admin-espace/employees" component={Employes} />
+          <Route exact path="/admin-espace/all-conges" component={Conges} />
+          <Route component={Login} />
+        </Switch>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

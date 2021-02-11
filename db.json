@@ -1,0 +1,120 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstname": "user100",
+      "lastname": "user00",
+      "email": "user@gmail.com",
+      "cin": "mc238089",
+      "phone": "+212602074607",
+      "cnss": "158749633",
+      "fonction": "Responsable Entité",
+      "role": "USER",
+      "password": "mc238089"
+    },
+    {
+      "id": 2,
+      "firstname": "admin1",
+      "lastname": "Lakbir",
+      "email": "admin@gmail.com",
+      "cin": "mc284189",
+      "phone": "+212602073333",
+      "cnss": "150047533",
+      "fonction": "Administrateur",
+      "password": "5555",
+      "role": "ADMIN"
+    },
+    {
+      "id": 4,
+      "firstname": "Lakbir",
+      "lastname": "ABDERRAHIM11",
+      "email": "lakbir19947@gmail.com",
+      "cin": "mc284189",
+      "phone": "+3358241322",
+      "cnss": "ccccccccccccccc",
+      "fonction": "Project Manager",
+      "role": "ADMIN",
+      "password": "mc284189"
+    },
+    {
+      "firstname": "Mohamed",
+      "lastname": "Mohammed",
+      "email": "mohamed@gmail.com",
+      "cin": "MP487564",
+      "phone": "06028847700",
+      "cnss": "ccccccccccccccc",
+      "fonction": "Project Manager",
+      "role": "USER",
+      "password": "MP487564",
+      "id": 5
+    },
+    {
+      "firstname": "Lakbir",
+      "lastname": "Test",
+      "email": "lakbir19947@gmail.com",
+      "cin": "mc284189",
+      "phone": "+3358241322",
+      "cnss": "ccccccccccccccc",
+      "fonction": "Project Manager",
+      "role": "ADMIN",
+      "password": "mc284189",
+      "id": 6
+    }
+  ],
+  "conges": [
+    {
+      "id": 1,
+      "idUser": "1",
+      "etat": "En Attente",
+      "datedebut": "10/01/2021",
+      "nbjour": "10",
+      "name": "user user",
+      "type": "Congé maladie"
+    },
+    {
+      "id": 2,
+      "idUser": "1",
+      "etat": "Validé",
+      "datedebut": "10/03/2021",
+      "nbjour": "5",
+      "name": "user user",
+      "type": "Congé payé"
+    },
+    {
+      "id": 4,
+      "idUser": "1",
+      "etat": "Validé",
+      "datedebut": "10/05/2021",
+      "nbjour": "1.5",
+      "name": "user user",
+      "type": "Abscence Autorisée"
+    },
+    {
+      "idUser": 1,
+      "etat": "Refusée",
+      "datedebut": "04/09/2020",
+      "nbjour": "7",
+      "type": "Test",
+      "name": "user user",
+      "id": 7
+    },
+    {
+      "idUser": 1,
+      "etat": "Validé",
+      "datedebut": "04/09/2020",
+      "nbjour": "7.5",
+      "type": "Test",
+      "name": "user user",
+      "id": 8
+    },
+    {
+      "idUser": 1,
+      "etat": "En Attente",
+      "datedebut": "13/07/2020",
+      "nbjour": "6",
+      "type": "Hello",
+      "name": "user user",
+      "id": 9
+    }
+  ]
+}
